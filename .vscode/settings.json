@@ -1,0 +1,8 @@
+{
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "workbench.commandPalette.history": 15,
+    "workbench.reduceMotion": "off",
+    "workbench.startupEditor": "none",
+    "workbench.editor.limit.value": 4,
+    "workbench.settings.enableNaturalLanguageSearch": false
+}
