@@ -21,13 +21,13 @@ export default function About(){
                 <div id="myPicture"></div>
             </div>
                 <h3>Sobre mi</h3>
-                <p>Soy un desarrollador web full stack junior orientado al desarrollo back-end, con muchas ganas de aprender, 
+                <p>Soy un desarrollador web full stack orientado al desarrollo back-end, con muchas ganas de aprender, 
                     <br/>
                    trabajar y ,mejorar para poder ofrecer el mejor servicio posible a los clientes y empresas!</p>
             <div>
             </div>
                 <h3>Tecnologias</h3>
-                <p>Estas son algunas de las tecnologias que aprendí en el bootcamp de SoyHenry:</p>
+                <p>Estas son algunas de las tecnologias que aprendí en el bootcamp de SoyHenry ,<br/>en las cuales sigo trabajando, mejorando y aprendiendo:</p>
             <div id="tecnologias">
                 <div className="technology">
                     <p>React</p>
