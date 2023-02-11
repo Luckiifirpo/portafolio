@@ -10,24 +10,25 @@ export default function Projects(){
                 Estos son algunos de mis proyectos!
                 <p></p>
                 <fieldset>
-                    <legend>Portafolio</legend>
-                    <p>Es el proyecto en el que te encuentras actualmente</p>
-                    <p>Este es un proyecto personal, para darme a conocer y para mejorar mis habilidades en el desarrollo web</p>
-                </fieldset>
-                <fieldset>
                     <legend>Countries App</legend>
-                    <p>Este es mi primer proyecto, mi <a id="link_a" href="https://countriesapp-soyhenry.vercel.app" rel="noreferrer" target={"_blank"}>proyecto individual</a>,
+                    <p>Este es mi primer proyecto, mi <a name="link-pi" id="link_a" href="https://countriesapp-soyhenry.vercel.app" rel="noreferrer" target={"_blank"}>proyecto individual</a>,
                      hecho para el bootcamp de soyHenry.</p>
+                    <p>Consiste en una app donde puedes ver información sobre los países, tales como cantidad de población, su identificador de 3 letras, su continente, entre otros datos interesantes y asignarles actividades turisticas!!</p>
                      <div id="pi-image"></div>
-                    <p>Fue realizado con react y redux para el front-end, con express js para el back-end y con postgresql para la base de datos!</p>
+                    <p>Fue realizado con React y Redux para el front-end, con Express js para el back-end y con PostgreSQL para la base de datos!</p>
                 </fieldset>
                 <fieldset>
                     <legend>Huellitas de amor</legend>
-                    <p>En proceso...</p>
+                    <p>Este es el <a id="link_a" href="https://huellitas-de-amor.vercel.app" rel="noreferrer" target={"_blank"}>proyecto final</a> realizado en un grupo de 8 integrantes para la culminación del bootcamp de soyHenry.</p>
+                    <p>se trata de una página en donde poder adoptar o dar en adopción animales, o en caso de no poder adoptar pero
+                         querer ayudar también se puede hacer donaciones,
+                         tanto de dinero como de insumos (comida, camas, medicinas, etc)</p>
+                    <div id="pf-image"></div>
+                    <p>Fue desarrollado con React, Redux Toolkit y Material UI para el front-end, con Express js, Nodejs y PostgreSQL para el back-end y base de datos respectivamente!</p>
                 </fieldset>
 
             <footer>
-                <p style={{"max-width": "105vh"}}>Muchas gracias por tomarte el tiempo de ver mi proyecto, si estás buscando a una persona responsable, atenta y que siempre da lo mejor de si te invito a </p>
+                <p style={{"max-width": "105vh"}}>Muchas gracias por tomarte el tiempo de ver mis proyectos, si estás buscando a una persona responsable, atenta y que siempre da lo mejor de si te invito a </p>
                 <p className="nav_buttons" 
                 onClick={()=>{
                     navigate("/contact")

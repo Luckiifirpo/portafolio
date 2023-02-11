@@ -34,9 +34,9 @@ export default function NavBar(){
         <div id="nav-bar">
                 <img onClick={toggleMenu} src={menu} alt="logo de portafolio" id="logo" style={{"width": "40px"}}/>
             <div id="menu" className="container">
-                <p className="nav_buttons" title="/" onClick={navigateOnClick} >Sobre Mi</p>
-                <p className="nav_buttons" title="/contact" onClick={navigateOnClick} >Contacto</p>
-                <p className="nav_buttons" title="/projects" onClick={navigateOnClick} >Proyectos</p>
+                <p className="nav_links" title="/" onClick={navigateOnClick} >Sobre Mi</p>
+                <p className="nav_links" title="/contact" onClick={navigateOnClick} >Contacto</p>
+                <p className="nav_links" title="/projects" onClick={navigateOnClick} >Proyectos</p>
             </div>
         </div>
     )
