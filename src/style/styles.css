@@ -273,6 +273,14 @@ body{
     padding-bottom: 30px;
 }
 
+.certification{
+    border-top: 2px dashed gray;
+}
+
+.certification:last-of-type{
+    padding-bottom: 20px;
+}
+
 .nav_buttons{
     border: 1px solid black;
     background-color: black;

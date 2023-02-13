@@ -78,6 +78,16 @@ export default function About(){
                     <img src={mongodb_logo} alt="MongoDB Logo" style={{width: "90px"}} />
                 </div>
             </div>
+            <div id="datos-interes">
+                <h3>Otros datos de interés</h3>
+                <div id="certifications">
+                    <div className="certification">
+                        <p>Javascript Algorithms and Data Structures</p>
+                        <p>- FreeCodeCamp -</p>
+                        <p>Compruebala <a href="https://www.freecodecamp.org/certification/Luciano_Firpo/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">aquí</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
