@@ -6,11 +6,12 @@ import nodejs_logo from "../imagenes/nodejs_logo.svg"
 import postgresql_logo from "../imagenes/postgresql_logo.svg"
 import react_logo from "../imagenes/react_logo.svg"
 import redux_logo from "../imagenes/redux_logo.svg"
-import { useNavigate } from "react-router-dom"
+import mongodb_logo from "../imagenes/mongodb_logo.svg"
+// import { useNavigate } from "react-router-dom"
 import "../style/styles.css"
 
 export default function About(){
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
 
     return(
@@ -20,10 +21,19 @@ export default function About(){
                 <h1>FIRPO<br/> LUCIANO DANIEL</h1>
                 <div id="myPicture"></div>
             </div>
+            <div id="sobre-mi">
                 <h3>Sobre mi</h3>
-                <p>Soy un desarrollador web full stack orientado al desarrollo back-end, con muchas ganas de aprender, 
-                    <br/>
-                   trabajar y ,mejorar para poder ofrecer el mejor servicio posible a los clientes y empresas!</p>
+                <div style={{width: "85%"}}>
+                    <p>Desde chico siempre me llamó la atención el cómo se hacían las cosas relacionadas a la tecnología,
+                        fue esa curiosidad la que me impulsó a tomar cursos sobre reparación de celulares y computadoras, y también lo que haría que me
+                        interese la programación, aunque no tuve la oportunidad de estudiar sobre eso hasta el 2022, que se me cruzó en el camino el bootcamp
+                        soyHenry, un poco desconfiado al principio como la mayoría me costó bastante creer lo que ofrecían, sin embargo no tenia mucho que perder,
+                        y tenía todo por ganar así que comencé y pude hacerme un Desarrollador full stack, es gracias a eso que hoy puedes leer este apartado en mi portafolio y gracias también al apoyo de mi familia,
+                        te agradezco por leer un poco sobre mi, y también por visitar mi portafolio! <br/>
+                        Si te interesa contactarte conmigo aquí mismo te dejo dos alternativas en el apartado de CONTACTO
+                    </p>
+                </div>
+            </div>
             <div>
             </div>
                 <h3>Tecnologias</h3>
@@ -62,31 +72,12 @@ export default function About(){
                     <img src={javascript_logo} alt="JavaScript Logo" style={{width: "70px"}} />
                 </div>
             </div>
-            <div style={{"display": "flex", "justify-content": "center", "flex-direction": "column", "align-items": "center"}}>
-                <h3>Puedes ver mis proyectos</h3>
-                <p className="nav_buttons" 
-                onClick={()=>{
-                    navigate("/projects")
-                    window.scrollTo("top", 0)
-                    }}>
-                        AQUÍ
-                        </p>
+            <div id="aprendiendo">
+                    <p>Esta es una de las tecnologias que me encuentro aprendiendo actualmente:</p>
+                <div className="technology"> 
+                    <img src={mongodb_logo} alt="MongoDB Logo" style={{width: "90px"}} />
+                </div>
             </div>
-            <p></p>
-            <br />
-            <footer>
-                <p style={{"max-width": "105vh"}}>Muchas gracias por visitar mi portafolio, puedes contactarme</p>
-                <p className="nav_buttons" 
-                onClick={()=>{
-                    navigate("/contact")
-                    window.scrollTo("top", 0)
-                 }}>
-                    AQUÍ
-                    </p>
-                <p></p>
-                <p></p>
-            </footer>
-
         </div>
     )
 }
