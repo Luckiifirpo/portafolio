@@ -81,6 +81,7 @@ export default function About(){
             <div id="datos-interes">
                 <h3>Otros datos de interés</h3>
                 <div id="certifications">
+                    <p style={{"font-weight": "800"}}>Certificaciones:</p>
                     <div className="certification">
                         <p>Javascript Algorithms and Data Structures</p>
                         <p>- FreeCodeCamp -</p>
