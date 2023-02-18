@@ -87,6 +87,11 @@ export default function About(){
                         <p>- FreeCodeCamp -</p>
                         <p>Compruebala <a href="https://www.freecodecamp.org/certification/Luciano_Firpo/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">aquí</a></p>
                     </div>
+                    <div className="certification">
+                        <p>Standard English Set {"(B2 - Upper Intermediate)"}</p>
+                        <p>- EF SET -</p>
+                        <p>Compruebala <a href="https://www.efset.org/cert/dFxXhu" target="_blank" rel="noreferrer">aquí</a></p>
+                    </div>
                 </div>
             </div>
         </div>
