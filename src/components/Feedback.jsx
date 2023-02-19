@@ -2,7 +2,7 @@ import emailjs from "emailjs-com"
 import React, {useEffect, useState} from "react"
 import swal from "sweetalert";
 import Validate from "./Feedback-validations";
-
+import { langPackage } from "./lang/langPackage.json"
 // const {SERVICE, TEMPLATE, KEY} = process.env
 const service = "service_5gg1gjf";
 const template = "template_ogizjil";
@@ -10,7 +10,7 @@ const key = "njNpt7haEqdpR1Lxr";
 
 const submit_button = document.getElementById("submit-button")
 
-export default function Feedback(){
+export default function Feedback({lang}){
     const [inputs, setInputs] = useState({
         email: "",
         subject: "",
@@ -47,8 +47,8 @@ export default function Feedback(){
           });
 
         swal({
-            title: "Gracias por contactarte",
-            text: "en breve respondere a tu mensaje",
+            title: langPackage[lang].more.alerts.sendEmail.title,
+            text: langPackage[lang].more.alerts.sendEmail.text,
             buttons: false,
             timer: 1500,
         }).then(setInputs({
@@ -67,9 +67,9 @@ export default function Feedback(){
     }, [errors])
 
     return(<div id="send-email">
-        <h2>Comunicate conmigo!</h2>
+        <h2>{langPackage[lang].enviarEmail.title}!</h2>
         <form id="contact-form" onSubmit={sendEmail}>
-            Email:<br/>
+            {langPackage[lang].enviarEmail.subtitles.email}:<br/>
             {errors.email ? <p className="errors">*{errors.email}*</p> : null}
             <input 
                 type="email" 
@@ -77,9 +77,9 @@ export default function Feedback(){
                 id="email" 
                 onChange={handleInputChange}
                 value={inputs.email}
-                placeholder="ejemplo@email.com"
+                placeholder={langPackage[lang].enviarEmail.placeholders.email}
             /><br/>
-            Asunto:<br/>
+            {langPackage[lang].enviarEmail.subtitles.asunto}:<br/>
             {errors.subject ? <p className="errors">*{errors.subject}*</p> : null}
             <input 
                 type="text" 
@@ -87,9 +87,9 @@ export default function Feedback(){
                 id="subject" 
                 onChange={handleInputChange}
                 value={inputs.subject}
-                placeholder="Nos gustaría conocerte..."
+                placeholder={langPackage[lang].enviarEmail.placeholders.asunto}
             /><br/>
-            Mensaje:<br/>
+            {langPackage[lang].enviarEmail.subtitles.mensaje}:<br/>
             {errors.message ? <p className="errors">*{errors.message}*</p> : null}
             <textarea 
                 name="message" 
@@ -98,9 +98,9 @@ export default function Feedback(){
                 rows="10" 
                 onChange={handleInputChange}
                 value={inputs.message}
-                placeholder="Hola Luciano..."
+                placeholder={langPackage[lang].enviarEmail.placeholders.mensaje}
             ></textarea><br/>
-            <button id="submit-button" disabled={Object.keys(errors).length > 0 ? true : false} className="nav_buttons" type="submit">Enviar </button>
+            <button id="submit-button" disabled={Object.keys(errors).length > 0 ? true : false} className="nav_buttons" type="submit">{langPackage[lang].more.buttons.enviar} </button>
         </form>
     </div>)
 }
