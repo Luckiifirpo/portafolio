@@ -3,6 +3,7 @@ import gmail_logo from "../imagenes/gmail_logo.svg"
 import calendly_logo from "../imagenes/calendly_logo.svg"
 import swal from "sweetalert"
 import {useNavigate} from "react-router-dom"
+import React from "react"
 
 const calendly = "https://calendly.com/lucianofirpopp/30min";
 const linkedin = "https://www.linkedin.com/in/firpo-luciano/";

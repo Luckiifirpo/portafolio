@@ -5,10 +5,11 @@ import Contact from './components/Contact_Me';
 import NavBar from './components/NavBar';
 import Feedback from './components/Feedback';
 import Projects from './components/Projects';
+import React from 'react';
 
 function App() {
 
-  return (
+  return ( 
     <div className="App">
       {<NavBar/>}
       <Routes>

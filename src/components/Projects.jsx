@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import github_logo from "../imagenes/github_logo.svg"
 import swal from "sweetalert";
+import React from "react"
 
 const changeHref = (where) => {
     window.location.href = where
