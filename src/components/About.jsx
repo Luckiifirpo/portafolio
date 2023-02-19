@@ -7,6 +7,7 @@ import postgresql_logo from "../imagenes/postgresql_logo.svg"
 import react_logo from "../imagenes/react_logo.svg"
 import redux_logo from "../imagenes/redux_logo.svg"
 import mongodb_logo from "../imagenes/mongodb_logo.svg"
+import React from "react"
 // import { useNavigate } from "react-router-dom"
 import "../style/styles.css"
 

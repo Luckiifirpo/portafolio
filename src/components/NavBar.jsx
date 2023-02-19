@@ -3,6 +3,7 @@ import { useState } from "react"
 import menu from "../imagenes/menu-svg.svg"
 import "../style/styles.css"
 import { useEffect } from "react"
+import React from "react"
 
 
 export default function NavBar(){
