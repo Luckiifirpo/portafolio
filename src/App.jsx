@@ -5,18 +5,19 @@ import Contact from './components/Contact_Me';
 import NavBar from './components/NavBar';
 import Feedback from './components/Feedback';
 import Projects from './components/Projects';
-import React from 'react';
+import React, {useState} from 'react';
 
 function App() {
+  const [lang, setLang] = useState("es");
 
   return ( 
     <div className="App">
-      {<NavBar/>}
+      {<NavBar lang={lang} setLang={setLang}/>}
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/sendEmail" element={<Feedback/>} />
+        <Route path="/" element={<About lang={lang} />} />
+        <Route path="/contact" element={<Contact lang={lang} />} />
+        <Route path="/projects" element={<Projects lang={lang} />} />
+        <Route path="/sendEmail" element={<Feedback lang={lang} />} />
       </Routes>
     </div>
   );

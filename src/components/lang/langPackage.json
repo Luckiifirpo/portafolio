@@ -1,0 +1,194 @@
+{
+   "langPackage": {
+        "es": {
+            "navbar": {
+                "sobreMi": "Sobre Mi",
+                "contacto": "Contacto",
+                "proyectos": "Proyectos"
+            },
+            "sobreMi": {
+                "title": "Hola! un gusto poder conocerte, mi nombre es",
+                "nombre": {
+                    "apellido": "FIRPO",
+                    "nombre": "LUCIANO DANIEL"
+                },
+                "subtitulos": {
+                    "sobreMi": "Sobre mi",
+                    "tecnologias": "Tecnologias",
+                    "otrosDatos": "Otros datos de interés",
+                    "certificaciones": "Certificaciones"
+                },
+                "paragraphs": {
+                    "sobreMi": "Desde chico siempre me llamó la atención el cómo se hacían las cosas relacionadas a la tecnología, fue esa curiosidad la que me impulsó a tomar cursos sobre reparación de celulares y computadoras, y también lo que haría que me interese la programación, aunque no tuve la oportunidad de estudiar sobre eso hasta el 2022, que se me cruzó en el camino el bootcamp soyHenry, un poco desconfiado al principio como la mayoría me costó bastante creer lo que ofrecían, sin embargo no tenia mucho que perder, y tenía todo por ganar así que comencé y pude hacerme un Desarrollador full stack, es gracias a eso que hoy puedes leer este apartado en mi portafolio y gracias también al apoyo de mi familia. Te agradezco por leer un poco sobre mi, y también por visitar mi portafolio! Si te interesa contactarte conmigo aquí mismo te dejo dos alternativas en el apartado de CONTACTO",
+                    "tecnologias": {
+                        "queConozco": "Estas son algunas de las tecnologias que aprendí en el bootcamp de soyHenry, en las cuales sigo trabajando, mejorando y aprendiendo",
+                        "queEstoyAprendiendo": "Esta es una de las tecnologias que me encuentro aprendiendo actualmente"
+                    }
+                },
+                "comprobarCertificados": {
+                    "compruebala": "compruebala",
+                    "aqui": "aquí"
+                }
+            },
+            "contacto": "Puedes contactarme por aquí",
+            "proyectos": {
+                "title": "Proyectos",
+                "subtitle": "Estos son algunos de mis proyectos",
+                "proyecto": {
+                    "countriesApp": {
+                        "paragraphs": {
+                            "first": "Este es mi primer proyecto, mi proyecto individual, hecho para el bootcamp de soyHenry",
+                            "second": "Consiste en una app donde puedes ver información sobre los países, tales como cantidad de población, su identificador de 3 letras, su continente, entre otros datos interesantes, y también puedes crearles y asignarles actividades turisticas",
+                            "third": "Este fue un proyecto completamente desarrollado por mi, en un plazo de aproximadamente 25 días, logré cumplir 2 objetivos extra, que fueron el deploy y también el diseño responsive",
+                            "last": "Fue realizado con React y Redux para el front-end, con Express js para el back-end y con PostgreSQL para la base de datos"
+                        }
+                    },
+                    "huellitasApp": {
+                        "paragraphs": {
+                            "first": "Este es el proyecto final realizado en un grupo de 8 integrantes para la culminación del bootcamp de soyHenry",
+                            "second": "se trata de una página en donde poder adoptar o dar en adopción animales, o en caso de no poder adoptar pero querer ayudar también se puede hacer donaciones, tanto de dinero como de insumos (comida, camas, medicinas, etc)",
+                            "third": "En él fui encargado de hacer el sistema de autenticación local, la subida de imagenes a cloudinary, revisión y corrección de errores mejorando el código con buenas prácticas y me encargué de una parte de la traducción",
+                            "last": "Fue desarrollado con React, Redux Toolkit y MaterialUI para el front-end, con Express js, Nodejs y PostgreSQL para el back-end y base de datos respectivamente"
+                        }
+                    }
+                },
+                "buttons": {
+                    "pagina": "Página web"  ,
+                    "repositorio": "Repositorio"              
+                },
+                "footer": "Muchas gracias por tomarte el tiempo de ver mis proyectos, si estás buscando a una persona responsable, atenta y que siempre da lo mejor de si te invito a"
+            },
+            "enviarEmail": {
+                "title": "Comunicate conmigo",
+                "subtitles": {
+                    "email": "Email",
+                    "asunto": "Asunto",
+                    "mensaje": "Mensaje"
+                },
+                "placeholders": {
+                    "email": "ejemplo@email.com",
+                    "asunto": "Nos gustaría conocerte...",
+                    "mensaje": "Hola Luciano..."
+                }
+            },
+            "more": {
+                "buttons": {
+                    "enviar": "enviar",
+                    "contactarme": "CONTACTARME"
+                },
+                "alerts": {
+                    "proyectos": {
+                        "title": "Gracias por interesarte en mi proyecto y en mí",
+                        "text": "serás redirigido en breve..."
+                    },
+                    "sendEmail": {
+                        "title": "Gracias por contactarte",
+                        "text": "en breve respondere a tu mensaje"
+                    },
+                    "contacto": {
+                        "title": "Gracias por interesarte en mí",
+                        "text": {
+                            "navigate": "espero tu mensaje...",
+                            "redirect": "serás redirigido en breve..."
+                        }
+                    }
+                }
+            }
+        },
+        "en": {
+            "navbar": {
+                "sobreMi": "About Me",
+                "contacto": "Contact",
+                "proyectos": "Projects"
+            },
+            "sobreMi": {
+                "title": "Hi! is a pleasure to meet you, mi name is",
+                "nombre": {
+                    "apellido": "FIRPO",
+                    "nombre": "LUCIANO DANIEL"
+                },
+                "subtitulos": {
+                    "sobreMi": "About me",
+                    "tecnologias": "Technologies",
+                    "otrosDatos": "Other interesting data",
+                    "certificaciones": "Certifications"
+                },
+                "paragraphs": {
+                    "sobreMi": "Since I was a kid I was always curious about how things related to technology were done, it was that curiosity that prompted me to take courses on cell phone and computer repair, and also what would make me interested in programming, although I did not have the opportunity to study about it until 2022, which crossed my path Henry's bootcamp, a little distrustful at first like most I found it hard to believe what they offered, However I didn't have much to lose, and I had everything to gain so I started and I could become a full stack developer, it is thanks to that that today you can read this section in my portfolio and thanks also to the support of my family. Thank you for reading a little about me, and also for visiting my portfolio! If you are interested in contacting me right here I leave you two alternatives in the CONTACT section",
+                    "tecnologias": {
+                        "queConozco": "These are some of the technologies that I learned in the soyHenry bootcamp, in which I am still working, improving and learning.",
+                        "queEstoyAprendiendo": "This is one of the technologies I am currently learning."
+                    }
+                },
+                "comprobarCertificados": {
+                    "compruebala": "Check",
+                    "aqui": "here"
+                }
+            },
+            "contacto": "You can contact me here",
+            "proyectos": {
+                "title": "Projects",
+                "subtitle": "These are some of my projects",
+                "proyecto": {
+                    "countriesApp": {
+                        "paragraphs": {
+                            "first": "This is my first project, my individual project, made for the Henry bootcamp.",
+                            "second": "It consists of an app where you can see information about the countries, such as population, its 3 letter identifier, its continent, among other interesting data, and you can also create and assign tourist activities to them.",
+                            "third": "This was a project completely developed by me, in a period of approximately 25 days, I managed to accomplish 2 extra objectives, which were the deploy and also the responsive design.",
+                            "last": "It was made with React and Redux for the front-end, with Express js for the back-end and with PostgreSQL for the database."
+                        }
+                    },
+                    "huellitasApp": {
+                        "paragraphs": {
+                            "first": "This is the final project realized in a group of 8 members for the culmination of the Henry bootcamp.",
+                            "second": "this is a page where you can adopt or give animals for adoption, or if you can not adopt but want to help you can also make donations, both money and supplies (food, beds, medicine, etc).",
+                            "third": "I was in charge of the local authentication system, uploading images to cloudinary, reviewing and correcting bugs, improving the code with best practices and I was in charge of part of the translation.",
+                            "last": "It was developed with React, Redux Toolkit and MaterialUI for the front-end, with Express js, Nodejs and PostgreSQL for the back-end and database respectively."
+                        }
+                    }
+                },
+                "buttons": {
+                    "pagina": "webpage"  ,
+                    "repositorio": "Repository"              
+                },
+                "footer": "Thank you very much for taking the time to see my projects, if you are looking for a responsible, attentive person who always gives the best of himself I invite you to"
+            },
+            "enviarEmail": {
+                "title": "Get in touch with me",
+                "subtitles": {
+                    "email": "Email",
+                    "asunto": "Subject",
+                    "mensaje": "Message"
+                },
+                "placeholders": {
+                    "email": "example@email.com",
+                    "asunto": "We want to meet you...",
+                    "mensaje": "Hi Luciano..."
+                }
+            },
+            "more": {
+                "buttons": {
+                    "enviar": "send",
+                    "contactarme": "CONTACT ME"
+                },
+                "alerts": {
+                    "proyectos": {
+                        "title": "Thanks for taking an interest in me and my project",
+                        "text": "you will be redirected soon..."
+                    },
+                    "sendEmail": {
+                        "title": "Thanks for contacting me",
+                        "text": "soon i answer your questions"
+                    },
+                    "contacto": {
+                        "title": "Thanks for taking an interest in me",
+                        "text": {
+                            "navigate": "ill be waiting your message...",
+                            "redirect": "you will be redirected soon..."
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,37 +8,32 @@ import react_logo from "../imagenes/react_logo.svg"
 import redux_logo from "../imagenes/redux_logo.svg"
 import mongodb_logo from "../imagenes/mongodb_logo.svg"
 import React from "react"
-// import { useNavigate } from "react-router-dom"
+import { langPackage } from "./lang/langPackage.json"
 import "../style/styles.css"
 
-export default function About(){
+export default function About({lang}){
     // const navigate = useNavigate();
 
 
     return(
         <div id="about">
             <div id="name_pic">
-                <h2>Hola! un gusto poder conocerte, mi nombre es:</h2>
-                <h1>FIRPO<br/> LUCIANO DANIEL</h1>
+                <h2>{langPackage[lang].sobreMi.title}:</h2>
+                <h1>{langPackage[lang].sobreMi.nombre.apellido}<br/> {langPackage[lang].sobreMi.nombre.nombre}</h1>
                 <div id="myPicture"></div>
             </div>
             <div id="sobre-mi">
-                <h3>Sobre mi</h3>
+                <h3>{langPackage[lang].sobreMi.subtitulos.sobreMi}</h3>
                 <div style={{width: "85%"}}>
-                    <p>Desde chico siempre me llamó la atención el cómo se hacían las cosas relacionadas a la tecnología,
-                        fue esa curiosidad la que me impulsó a tomar cursos sobre reparación de celulares y computadoras, y también lo que haría que me
-                        interese la programación, aunque no tuve la oportunidad de estudiar sobre eso hasta el 2022, que se me cruzó en el camino el bootcamp
-                        soyHenry, un poco desconfiado al principio como la mayoría me costó bastante creer lo que ofrecían, sin embargo no tenia mucho que perder,
-                        y tenía todo por ganar así que comencé y pude hacerme un Desarrollador full stack, es gracias a eso que hoy puedes leer este apartado en mi portafolio y gracias también al apoyo de mi familia,
-                        te agradezco por leer un poco sobre mi, y también por visitar mi portafolio! <br/>
-                        Si te interesa contactarte conmigo aquí mismo te dejo dos alternativas en el apartado de CONTACTO
+                    <p>
+                        {langPackage[lang].sobreMi.paragraphs.sobreMi}
                     </p>
                 </div>
             </div>
             <div>
             </div>
-                <h3>Tecnologias</h3>
-                <p>Estas son algunas de las tecnologias que aprendí en el bootcamp de SoyHenry ,<br/>en las cuales sigo trabajando, mejorando y aprendiendo:</p>
+                <h3>{langPackage[lang].sobreMi.subtitulos.tecnologias}</h3>
+                <p>{langPackage[lang].sobreMi.paragraphs.tecnologias.queConozco}:</p>
             <div id="tecnologias">
                 <div className="technology">
                     <p>React</p>
@@ -74,24 +69,24 @@ export default function About(){
                 </div>
             </div>
             <div id="aprendiendo">
-                    <p>Esta es una de las tecnologias que me encuentro aprendiendo actualmente:</p>
+                    <p>{langPackage[lang].sobreMi.paragraphs.tecnologias.queEstoyAprendiendo}:</p>
                 <div className="technology"> 
                     <img src={mongodb_logo} alt="MongoDB Logo" style={{width: "90px"}} />
                 </div>
             </div>
             <div id="datos-interes">
-                <h3>Otros datos de interés</h3>
+                <h3>{langPackage[lang].sobreMi.subtitulos.otrosDatos}</h3>
                 <div id="certifications">
-                    <p style={{"font-weight": "800"}}>Certificaciones:</p>
+                    <p style={{"font-weight": "800"}}>{langPackage[lang].sobreMi.subtitulos.certificaciones}:</p>
                     <div className="certification">
                         <p>Javascript Algorithms and Data Structures</p>
                         <p>- FreeCodeCamp -</p>
-                        <p>Compruebala <a href="https://www.freecodecamp.org/certification/Luciano_Firpo/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">aquí</a></p>
+                        <p>{langPackage[lang].sobreMi.comprobarCertificados.compruebala} <a href="https://www.freecodecamp.org/certification/Luciano_Firpo/javascript-algorithms-and-data-structures" target="_blank" rel="noreferrer">{langPackage[lang].sobreMi.comprobarCertificados.aqui}</a></p>
                     </div>
                     <div className="certification">
                         <p>Standard English Set {"(B2 - Upper Intermediate)"}</p>
                         <p>- EF SET -</p>
-                        <p>Compruebala <a href="https://www.efset.org/cert/dFxXhu" target="_blank" rel="noreferrer">aquí</a></p>
+                        <p>{langPackage[lang].sobreMi.comprobarCertificados.compruebala} <a href="https://www.efset.org/cert/dFxXhu" target="_blank" rel="noreferrer">{langPackage[lang].sobreMi.comprobarCertificados.aqui}</a></p>
                     </div>
                 </div>
             </div>
