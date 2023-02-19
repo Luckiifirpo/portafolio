@@ -2,54 +2,31 @@ import { useNavigate } from "react-router-dom"
 import github_logo from "../imagenes/github_logo.svg"
 import swal from "sweetalert";
 
+const changeHref = (where) => {
+    window.location.href = where
+}
+
+const githubs = {
+    countries: "https://github.com/Luckiifirpo/Countries-App-SoyHenry",
+    huellitas: "https://github.com/Luckiifirpo/PF-Huellitas-de-amor",
+}
+
+const deploys = {
+    countries: "https://countriesapp-soyhenry.vercel.app",
+    huellitas: "https://huellitas-de-amor.vercel.app"
+}
+
+const showMessageThenRedirect = (e) => {
+    swal({
+        title: "Gracias por interesarte en mi proyecto y en mí",
+        text: "serás redirigido en breve...",
+        buttons: false,
+        timer: 2000,
+    }).then(changeHref(e.target.attributes?.value?.nodeValue))
+}
+
 export default function Projects(){
     const navigate = useNavigate();
-
-    const goToCountriesGithub = () => {
-        window.location.href = "https://github.com/Luckiifirpo/Countries-App-SoyHenry"
-    }
-    const goToCountriesApp = () => {
-        window.location.href = "https://countriesapp-soyhenry.vercel.app"
-    }
-    const goToHuellitasGithub = () => {
-        window.location.href = "https://github.com/Luckiifirpo/PF-Huellitas-de-amor"
-    }
-    const goToHuellitasApp = () => {
-        window.location.href = "https://huellitas-de-amor.vercel.app"
-    }
-
-    const showCountriesGithub = () => {
-        swal({
-            title: "Gracias por interesarte en mi proyecto y en mí",
-            text: "serás redirigido en breve...",
-            buttons: false,
-            timer: 2000,
-        }).then(goToCountriesGithub)
-    }
-    const showCountriesApp = () => {
-        swal({
-            title: "Gracias por interesarte en mi proyecto y en mí",
-            text: "serás redirigido en breve...",
-            buttons: false,
-            timer: 2000,
-        }).then(goToCountriesApp)
-    }
-    const showHuellitasGithub = () => {
-        swal({
-            title: "Gracias por interesarte en mi proyecto y en mí",
-            text: "serás redirigido en breve...",
-            buttons: false,
-            timer: 2000,
-        }).then(goToHuellitasGithub)
-    }
-    const showHuellitasApp = () => {
-        swal({
-            title: "Gracias por interesarte en mi proyecto y en mí",
-            text: "serás redirigido en breve...",
-            buttons: false,
-            timer: 2000,
-        }).then(goToHuellitasApp)
-    }
 
     return(
         <div id="projects">
@@ -69,12 +46,12 @@ export default function Projects(){
                     <p>Fue realizado con React y Redux para el front-end, con Express js para el back-end y con PostgreSQL para la base de datos!</p>
                         <hr/>
                     <div className="buttons_projects">
-                        <div className="github-repo" onClick={showCountriesGithub}>
-                            <img src={github_logo} alt="GitHub Logo" width={"40px"} /> Repositorio
+                        <div className="github-repo" onClick={showMessageThenRedirect} value={githubs.countries}>
+                            <img src={github_logo} alt="GitHub Logo" width={"40px"} value={githubs.countries} /> Repositorio
                         </div>
                         |
-                        <div className="deploy-project" onClick={showCountriesApp}>
-                            <h3>Página web -{">"}</h3>
+                        <div className="deploy-project" onClick={showMessageThenRedirect} value={deploys.countries}>
+                            <h3 value={deploys.countries} >Página web -{">"}</h3>
                         </div>
                     </div>
                     
@@ -90,12 +67,12 @@ export default function Projects(){
                         revisión y corrección de erroes mejorando el código con buenas prácticas y me encargue de una parte de la traducción.</p>
                     <p>Fue desarrollado con React, Redux Toolkit y Material UI para el front-end, con Express js, Nodejs y PostgreSQL para el back-end y base de datos respectivamente!</p>
                     <div className="buttons_projects">
-                        <div className="github-repo" onClick={showHuellitasGithub}>
-                            <img src={github_logo} alt="GitHub Logo" width={"40px"} /> Repositorio
+                        <div className="github-repo" onClick={showMessageThenRedirect} value={githubs.huellitas}>
+                            <img src={github_logo} alt="GitHub Logo" width={"40px"} value={githubs.huellitas} /> Repositorio
                         </div>
                         |
-                        <div className="deploy-project" onClick={showHuellitasApp}>
-                            <h3>Página web -{">"}</h3>
+                        <div className="deploy-project" onClick={showMessageThenRedirect} value={deploys.huellitas}>
+                            <h3 value={deploys.huellitas}>Página web -{">"}</h3>
                         </div>
                     </div>
                 </fieldset>
